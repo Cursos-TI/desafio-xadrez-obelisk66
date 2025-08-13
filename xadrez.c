@@ -39,6 +39,7 @@ printf("**Escolha a peça do xadrez para movimentar **\n");
 printf("1. Torre\n");
 printf("2. Bispo\n");
 printf("3. Rainha\n");
+printf("4. Cavalo\n");
 
 scanf("%d", &peca);
 
@@ -158,7 +159,23 @@ case 3:{
     printf("Esquerda\n");
     i++;
   }while (i < 8);
+  break;
+}
+case 4:{
+    int cavalo = 1;
+    printf("Cavalo Escolha o movimento do cavalo: \n");
+    printf("escolha pré definida pelo professor.: \n");
+    while (cavalo--)
+    {
+        for(int i = 0;i < 2; i++ ){
+            printf("Baixo\n");
+
+        }
+        printf("Esquerda\n");
+    }
+    
   
+    break;
 }
 default:
     break;
