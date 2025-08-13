@@ -34,7 +34,7 @@ int torre;
 // Não entendi direito a obrigatóriedade do exercício e decidir fazer desta forma.Mas como tem uma "liberdade de exercitar o código" estou fazendo.
 
 
-// menu das peças
+// menu das peças para seelcionar
 printf("**Escolha a peça do xadrez para movimentar **\n");
 printf("1. Torre\n");
 printf("2. Bispo\n");
@@ -45,7 +45,7 @@ scanf("%d", &peca);
 
 switch (peca) // para determinar cada movimento das peças separados
 {
-case 1:
+case 1: // movimentaçao da torre
     int movimento;
     printf("escolha a direção da movimentação da torre:\n");
     printf("1 movimenta para horinzontal\n");
@@ -138,7 +138,7 @@ case 1:
     
 
     break;
-case 2:
+case 2://movimentação do Bispo
 // fiquei sem tempo pra terminar o restante .
   printf("escolha a direção da movimentação do Bispo:\n");
   printf("Escolha prédefinida pelo professor .:\n");
@@ -149,7 +149,7 @@ case 2:
   }
   
     break;
-case 3:{
+case 3:{// Movimentação da Rainha
  // fiquei sem tempo pra terminar o restante .
  int i = 0;
   printf("escolha a direção da movimentação do Rainha:\n");
@@ -161,7 +161,7 @@ case 3:{
   }while (i < 8);
   break;
 }
-case 4:{
+case 4:{ // Movimentação do cavalo
     int cavalo = 1;
     printf("Cavalo Escolha o movimento do cavalo: \n");
     printf("escolha pré definida pelo professor.: \n");
